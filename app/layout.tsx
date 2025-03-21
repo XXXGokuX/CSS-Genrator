@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { AppLayout } from "@/components/app-layout"
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,7 +28,17 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
         <meta name="monetag" content="d6341140a3b78eb74eeadb4d6550c416"></meta>
-        <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('groleegni.net',9114136,document.createElement('script'))</script>
+        <Script
+          id="monetag-script"
+          strategy="afterInteractive" // Ensures script loads after page load
+          dangerouslySetInnerHTML={{
+            __html: `(function(d,z,s){
+                      s.src='https://'+d+'/401/'+z;
+                      try{(document.body||document.documentElement).appendChild(s)}
+                      catch(e){}
+                   })('groleegni.net',9114136,document.createElement('script'))`,
+          }}
+        />
       </head>
 
       <body className={inter.className}>
