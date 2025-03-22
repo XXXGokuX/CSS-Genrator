@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://webleefy.com/"
+  const baseUrl = "https://webleefy.com"
 
   // List of all tools from the application
   const tools = [
