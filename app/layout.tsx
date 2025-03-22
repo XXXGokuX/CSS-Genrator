@@ -9,12 +9,12 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CSS Generator - Developer Tools for Web Design",
+  title: "Webleefy - Best Web Solutions",
   description:
     "Modern and interactive CSS and UI generators for frontend developers. Create beautiful gradients, shadows, animations and more with real-time preview.",
   keywords:
     "css generator, web design tools, css tools, gradient generator, box shadow, text shadow, border radius, glassmorphism, neumorphism, css grid, flexbox, clip path, animation, transform, filter, blob generator, wave generator",
-  generator: 'v0.dev'
+  
 }
 
 export default function RootLayout({
