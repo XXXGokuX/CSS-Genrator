@@ -77,7 +77,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <SidebarProvider defaultOpen={true}>
-      <div className="flex min-h-screen">
+      <div className="flex min-h-screen w-full" >
         <Sidebar variant="inset" collapsible="offcanvas">
           <SidebarHeader className="flex items-center justify-between p-4">
             <div className="flex items-center gap-2 font-semibold">

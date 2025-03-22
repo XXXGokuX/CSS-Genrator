@@ -28,6 +28,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
         <meta name="monetag" content="d6341140a3b78eb74eeadb4d6550c416"></meta>
+        <meta name="google-site-verification" content="27eYDbONYHuKFfmdKqsPtUodhkrvHDa4FC5dJ7Qjlf4" />
+        
         <Script
           id="monetag-script"
           strategy="afterInteractive"
