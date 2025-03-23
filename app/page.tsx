@@ -19,7 +19,7 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "CSS Generator - Developer Tools for Web Design",
+  title: "CSS Generator - Webleefy",
   description:
     "Modern and interactive CSS and UI generators for frontend developers. Create beautiful gradients, shadows, animations and more with real-time preview.",
 }
